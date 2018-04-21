@@ -1,51 +1,23 @@
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #949494;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
 
-input{
-    width: 80%;
-    height: 28px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+input[type=text]:focus {
+    width: 40%;
 }
 
 
 
-.w3-top .searching{
-    overflow: hidden;
-
-
-}
-.w3-top .searching button {
-    float: left;
-    padding: 6px 10px;
-    padding-bottom: 6px;
-    margin-top: 7px;
-    margin-left: -10px;
-    margin-bottom: 6px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: #ddd;
-    font-size: 12px;
-    border: none;
-    cursor: pointer;
-}
-
-.w3-top .searching button:hover {
-    background: #ccc;
-}
-
-/* Style the search box inside the navigation bar */
-.w3-top .searching input[type=text] {
-    float: left;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-    width: 50%;
-}
 
 
 
@@ -295,4 +267,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
->>>>>>> d9812ed46194dda61c5fe4b313ce8b57d68720fb
+
