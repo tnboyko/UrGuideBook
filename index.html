@@ -11,13 +11,14 @@
 
     <style>
         #map {
-            height: 600px;
+            height: 660px;
             width: 100%;
         }
     </style>
 
 </head>
-<body>
+<div>
+
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
@@ -51,16 +52,11 @@
 </div>
 
 <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
-</div>
+
 
 <!-- Making map -->
-<h3>My Google Maps Demo</h3>
-<div id="map"></div>
+
+<div id="map" class="map"></div>
 <script>
     function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
@@ -74,6 +70,7 @@
         });
     }
 </script>
+
 
 
 
