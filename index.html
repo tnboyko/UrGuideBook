@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
+
+    <script src="main.js"></script>
+    <link href="style.css" rel="stylesheet">
+=======
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="style.css">
+>>>>>>> 6b7ac01965772c8aa7ce2d7b458b3d11bde807e4
 
 
     <title>UrGuideBook</title>
@@ -13,12 +19,16 @@
     <!-- Bootsrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
+<<<<<<< HEAD
+
+=======
     <style>
         #map {
             height: 650px;
             width: 100%;
         }
     </style>
+>>>>>>> 6b7ac01965772c8aa7ce2d7b458b3d11bde807e4
 
 
 </head>
@@ -32,8 +42,16 @@
         /* Always set the map height explicitly to define the size of the div
          * element that contains the map. */
         #map {
+<<<<<<< HEAD
             height: 93%;
+=======
+<<<<<<< HEAD
+            height: 90%;
+=======
+            height: 93.5%;
+>>>>>>> 4b7a311e9071e9b950a994687ec9a6f9a3dbabe8
            top: 44px;
+>>>>>>> 6b7ac01965772c8aa7ce2d7b458b3d11bde807e4
         }
         /* Optional: Makes the sample page fill the window. */
         html, body {
@@ -90,49 +108,11 @@
 
 
 <!-- Making map -->
-
+<div id="floating-panel">
+    <input id="address" type="textbox" value="Sydney, NSW">
+    <input id="submit" type="button" value="Поиск">
+</div>
 <div id="map"></div>
-<script>
-
-    function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 12
-        });
-        var infoWindow = new google.maps.InfoWindow({map: map});
-
-        // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                var pos = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                };
-
-                infoWindow.setPosition(pos);
-                infoWindow.setContent('Location found.');
-                map.setCenter(pos);
-            }, function() {
-                handleLocationError(true, infoWindow, map.getCenter());
-            });
-        } else {
-            // Browser doesn't support Geolocation
-            handleLocationError(false, infoWindow, map.getCenter());
-        }
-    }
-
-    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-            'Error: The Geolocation service failed.' :
-            'Error: Your browser doesn\'t support geolocation.');
-    }
-</script>
-
-
-
-
-
 
 
 <!-- jQuery JavaScript -->
