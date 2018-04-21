@@ -7,18 +7,16 @@ input[type=text] {
             border-radius: 4px;
             font-size: 14px;
             background-color: #949494;
-
             padding: 12px 20px 12px 20px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
+
         }
 
 
-input[type=text]:focus {
-    width: 40%;
+
+.w3-bar-item{
+    box-sizing: border-box;
+    float: left;
 }
-
-
 
 .w3-top .searching button {
 
@@ -29,7 +27,8 @@ input[type=text]:focus {
 }
 
 .w3-top .searching button:hover {
-    background: #ccc;
+    background: #949494;
+    border-radius: 5px 5px 5px 5px;
 }
 
 
