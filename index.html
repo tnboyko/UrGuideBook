@@ -17,8 +17,6 @@
     </style>
 
 </head>
-<div>
-
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
@@ -59,15 +57,20 @@
 <div id="map" class="map"></div>
 <script>
     function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: uluru
-        });
+        var myLatlng = new google.maps.LatLng(50.4465784,30.53844074);
+        var mapOptions = {
+            zoom: 10,
+            center: myLatlng
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
         var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
+            position: myLatlng,
+            title:"Hello World!"
         });
+
+        // To add the marker to the map, call setMap();
+        marker.setMap(map);
     }
 </script>
 
