@@ -8,7 +8,6 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" type="text/css" href="style.css">
 
 
@@ -25,8 +24,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style>
-        /* Always set the map height explicitly to define the size of the div
-         * element that contains the map. */
+
         #map {
 
             height: 93%;
@@ -46,32 +44,39 @@
 
 <!-- Navbar -->
 <div class="w3-top">
-    <div class="w3-bar w3-black">
-        <div class="w3-dropdown-hover">
-            <button class="w3-padding-large w3-button" title="History">History <i class="fa fa-caret-down"></i></button>
+    <div class="w3-bar w3-black w3-card">
+        <div class="w3-bar-item w3-dropdown-hover w3-button">
+            <button class="w3-bar-item w3-padding-large w3-button" title="History">History <i class="fa fa-caret-down"></i></button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
                 <a href="#" class="w3-bar-item w3-button">1 place</a>
                 <a href="#" class="w3-bar-item w3-button">2 place</a>
                 <a href="#" class="w3-bar-item w3-button">3 place</a>
             </div>
         </div>
+        <div class="w3-bar-item w3-button">
         <div class="w3-dropdown-hover">
-            <button class="w3-padding-large w3-button" title="Favourite places">Favourite places <i class="fa fa-caret-down"></i></button>
+            <button class="w3-bar-item w3-padding-large w3-button" title="Favourite places">Favourite places <i class="fa fa-caret-down"></i></button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
                 <a href="#" class="w3-bar-item w3-button">1 place</a>
                 <a href="#" class="w3-bar-item w3-button">2 place</a>
                 <a href="#" class="w3-bar-item w3-button">3 place</a>
             </div>
         </div>
+        </div>
+        <div class="w3-bar-item w3-button">
         <div class="w3-dropdown-hover">
-            <button class="w3-padding-large w3-button" title="My Profile">My Profile <i class="fa fa-caret-down"></i></button>
+            <button class="w3-bar-item w3-padding-large w3-button" title="My Profile">My Profile <i class="fa fa-caret-down"></i></button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
                 <a href="#" class="w3-bar-item w3-button">Change password</a>
                 <a href="#" class="w3-bar-item w3-button">Exit</a>
             </div>
         </div>
-        <div class="w3-bar-item w3-button w3-right">
+        </div>
+        <div class="w3-bar-item w3-button w3-left">
             <button class="w3-bar-item w3-button w3-animate-zoom" title="Recommend me">Recommend me <i class="fa fa-check" aria-hidden="true"></i></button>
+        </div>
+        <div class="w3-button w3-right">
+            <button class="w3-btn w3-round-xxlarge w3-red" title="Sign in">Sign in with Google+</button>
         </div>
         <div class="searching">
             <form>
@@ -79,8 +84,6 @@
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
-
-
         </div>
     </div>
 
