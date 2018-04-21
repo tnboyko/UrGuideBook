@@ -1,34 +1,36 @@
-<<<<<<< HEAD
+
 input[type=text] {
-    width: 130px;
+    margin-left: 30px;
+    width: 350px;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #949494;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 30px;
+
+    padding: 12px 20px 12px 20px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-=======
-
-<<<<<<< HEAD
-=======
-input{
-    width: 80%;
-    height: 28px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
->>>>>>> 4b7a311e9071e9b950a994687ec9a6f9a3dbabe8
 }
+
 
 input[type=text]:focus {
     width: 40%;
 }
 
+
+
+.w3-top .searching button {
+
+    background: #000000;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.w3-top .searching button:hover {
+    background: #ccc;
+}
 
 
 
@@ -49,7 +51,6 @@ input[type=text]:focus {
     }
 }
 
->>>>>>> 6b7ac01965772c8aa7ce2d7b458b3d11bde807e4
 /* W3.CSS 4.10 February 2018 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
@@ -281,20 +282,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 
 
-.map{
-    top: 40px;
-
-}
-
-#map {
-    height: 100%;
-}
 /* Optional: Makes the sample page fill the window. */
 html, body {
     height: 100%;
@@ -314,7 +303,3 @@ html, body {
     line-height: 30px;
     padding-left: 10px;
 }
-=======
->>>>>>> d9812ed46194dda61c5fe4b313ce8b57d68720fb
->>>>>>> 6b7ac01965772c8aa7ce2d7b458b3d11bde807e4
->>>>>>> 4b7a311e9071e9b950a994687ec9a6f9a3dbabe8
