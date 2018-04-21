@@ -9,6 +9,13 @@
     <!-- Bootsrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+
 </head>
 <body>
 <!-- Navbar -->
@@ -46,7 +53,22 @@
 <!-- Navbar on small screens -->
 
 
-
+<!-- Making map -->
+<h3>My Google Maps Demo</h3>
+<div id="map"></div>
+<script>
+    function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
 
 
 
@@ -61,5 +83,9 @@
 
 <!--Own JavaScript -->
 <script type="text/javascript"  src="main.js"> </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC06cPZeOM8QRvBuj6Yl0uUOBf2r9-Weow&callback=initMap"
+        async defer>
+</script>
 </body>
 </html>
