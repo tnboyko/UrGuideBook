@@ -1,5 +1,4 @@
 
-
 #map {
 
     height: 92%;
@@ -13,5 +12,11 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+/*
+.btn-space {
+    margin-right: 70px;
+}
+*/
 
 
