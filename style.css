@@ -44,7 +44,13 @@ input[type=text] {
     }
 }
 
+#map {
 
+    height: 93%;
+    top: 45px;
+
+
+}
 /* Optional: Makes the sample page fill the window. */
 html, body {
     height: 100%;
