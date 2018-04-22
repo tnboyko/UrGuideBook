@@ -1,3 +1,5 @@
+
+
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: -34.397, lng: 150.644},
@@ -29,6 +31,7 @@ function initMap() {
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
     });
+
 }
 
 function geocodeAddress(geocoder, resultsMap) {
