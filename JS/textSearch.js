@@ -3,10 +3,10 @@
     alert(request);
 });*/
 
-var lolz;
+var inText;
 function onload() {
-    lolz = document.getElementById('textField');
+    inText = document.getElementById('textField');
 }
-function kk(){
-    alert(lolz.value);
+function showText(){
+    alert(inText.value);
 }
