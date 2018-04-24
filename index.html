@@ -59,8 +59,8 @@
             </div>
         </form>
         <ul class="nav navbar-nav navbar-right">
-            <li ><a href="#" class="g-signin2"  data-width="150" data-height="30" data-longtitle="true" data-onsuccess="onSignIn" role="button"></a></li>
-            <li><a href="#" id="logOut" class="btn navbar-btn btn-secondary" onclick="signOut()">Sign me out</a></li>
+            <li ><button class="loginBtn loginBtn--google">Sign in<a href="#" data-longtitle="true" data-onsuccess="onSignIn"></a></button></li>
+            <li><a href="#" id="logOut" class="loginBtn loginBtn--signOut" onclick="signOut()">Sign out</a></li>
         </ul>
 
         <button class="btn btn-warning navbar-btn">Recommend me something!</button>
@@ -83,10 +83,7 @@
 <script type="text/javascript" src="JS/main.js"></script>
 
 
-<!--Google Maps API-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC06cPZeOM8QRvBuj6Yl0uUOBf2r9-Weow&callback=initMap"
-        async defer>
-</script>
+
 <script type="text/javascript" src="JS/signIn.js"></script>
 </body>
 </html>

@@ -1,12 +1,19 @@
-var signInButton = $(".g-signin2");
+$(document).ready(function () {
+    logOutButton.css("display", "none");
+})
+
+
+var signInButton = $(".loginBtn--google");
 var logOutButton = $("#logOut");
 
 signInButton.click(function () {
     logOutButton.css("display", "inline-block");
+    signInButton.css("display", "none");
 });
 
 logOutButton.click(function () {
     logOutButton.css("display", "none");
+    signInButton.css("display", "inline-block");
 });
 
 function onSignIn(googleUser) {
@@ -20,16 +27,5 @@ function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
         console.log('User signed out.');
-    });
-}
-function renderButton() {
-    gapi.signin2.render('my-signin2', {
-        'scope': 'profile email',
-        'width': 240,
-        'height': 50,
-        'longtitle': true,
-        'theme': 'dark',
-        'onsuccess': onSuccess,
-        'onfailure': onFailure
     });
 }
