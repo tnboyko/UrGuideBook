@@ -3,7 +3,7 @@ $(document).ready(function () {
 })
 
 
-var signInButton = $(".loginBtn--google");
+var signInButton = $(".g-signin2");
 var logOutButton = $("#logOut");
 
 signInButton.click(function () {
