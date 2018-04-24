@@ -1,7 +1,6 @@
 $(document).ready(function () {
     logOutButton.css("display", "none");
-})
-
+});
 
 var signInButton = $(".g-signin2");
 var logOutButton = $("#logOut");
