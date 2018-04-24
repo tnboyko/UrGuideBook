@@ -1,7 +1,7 @@
 
 #map {
 
-    height: 92%;
+    height: 88%;
     top:-20px;
 
 
@@ -20,9 +20,8 @@ html, body {
 .loginBtn {
     box-sizing: border-box;
     position: relative;
-    /* width: 13em;  - apply for fixed size */
     margin: 8.5px;
-    padding: 2px 15px 0 46px;
+    padding: 0 15px 0 46px;
     border: none;
     text-align: left;
     line-height: 34px;
@@ -62,5 +61,16 @@ html, body {
 
 .loginBtn--signOut {
     font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    position: relative;
+    margin: 8.5px;
+    padding: 0 15px 0 46px;
+    border: none;
+    text-align: left;
+    line-height: 34px;
+    white-space: nowrap;
+    border-radius: 0.2em;
+    font-size: 16px;
+    color: #FFF;
 }
 
