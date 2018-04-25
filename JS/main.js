@@ -1,3 +1,5 @@
+var map;
+
 function initMap() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(setLocation);
@@ -9,7 +11,7 @@ function setLocation(position){
     var userPositionLatitude = position.coords.latitude;
     var userPositionLongitude = position.coords.longitude;
     var coordinates = new google.maps.LatLng(userPositionLatitude, userPositionLongitude);
-    var map = new google.maps.Map(document.getElementById("map"),{
+    map = new google.maps.Map(document.getElementById("map"),{
         center: coordinates,
          zoom: 14,
          mapTypeId: 'roadmap'
