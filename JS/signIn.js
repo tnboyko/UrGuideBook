@@ -1,18 +1,13 @@
-$(document).ready(function () {
-    logOutButton.css("display", "none");
-});
 
 var signInButton = $(".g-signin2");
 var logOutButton = $("#logOut");
 
 signInButton.click(function () {
     logOutButton.css("display", "inline-block");
-    signInButton.css("display", "none");
 });
 
 logOutButton.click(function () {
     logOutButton.css("display", "none");
-    signInButton.css("display", "inline-block");
 });
 
 function onSignIn(googleUser) {
