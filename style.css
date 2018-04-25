@@ -1,9 +1,11 @@
-
 #map {
-
     height: 89.6%;
     top:-20px;
+}
 
+#gmap_canvas {
+    height: 89.6%;
+    top:-20px;
 }
 /* Optional: Makes the sample page fill the window. */
 html, body {
@@ -33,8 +35,3 @@ html, body {
 .g-signin2{
     margin-top: -8px;
 }
-
-
-
-
-

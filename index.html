@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="google-signin-client_id" content="579503716251-gdm87331q7is4i8ojq97jerlr1bvt902.apps.googleusercontent.com">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC06cPZeOM8QRvBuj6Yl0uUOBf2r9-Weow&libraries=places&sensor=false"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Bootsrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>UrGuideBook</title>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <!--Google Maps API-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC06cPZeOM8QRvBuj6Yl0uUOBf2r9-Weow&callback=initMap" async defer></script>
 
 </head>
 <body>
@@ -44,11 +45,15 @@
                 </ul>
             </li>
         </ul>
+<<<<<<< HEAD
         <form class="navbar-form navbar-left">
+=======
+        <form class="navbar-form navbar-left"  method="get">
+>>>>>>> 6126ab62ebc8650cba5d7e3e5fa2ab843de105fc
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Enter a place">
+                <input type="text" class="form-control" placeholder="Enter a place" id = "textField"/>
                 <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit" value="submit">
+                    <button class="btn btn-default" type="submit" value="submit" onclick="findPlaces(); return false;">
                         <i class="glyphicon glyphicon-search"></i>
                     </button>
                 </div>
@@ -65,7 +70,10 @@
 
 
 <!-- Making map -->
-<div id="map"></div>
+<!--<div id="map"></div>-->
+
+<!-- Карта по textSearch -->
+<div id="gmap_canvas"></div>
 
 
 
@@ -76,9 +84,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!--Own JavaScript -->
+
+<script type="text/javascript" src="JS/textSearch.js"></script>
 <script type="text/javascript" src="JS/main.js"></script>
 <script type="text/javascript" src="JS/signIn.js"></script>
+<<<<<<< HEAD
 <script type="text/javascript" src="JS/textSearch.js"></script>
 
+=======
+>>>>>>> 6126ab62ebc8650cba5d7e3e5fa2ab843de105fc
 </body>
 </html>
