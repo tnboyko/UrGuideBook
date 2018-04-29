@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="google-signin-client_id" content="579503716251-gdm87331q7is4i8ojq97jerlr1bvt902.apps.googleusercontent.com">
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC06cPZeOM8QRvBuj6Yl0uUOBf2r9-Weow&libraries=places&sensor=false"></script>
-
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Bootsrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>UrGuideBook</title>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 
 </head>
 <body>
@@ -21,14 +18,6 @@
             <a class="navbar-brand" href="#">UrGuideBook</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">History<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">place</a></li>
-                    <li><a href="#">place</a></li>
-                    <li><a href="#">place</a></li>
-                </ul>
-            </li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Favourite places<span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -73,6 +62,9 @@
 
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script async defer type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC06cPZeOM8QRvBuj6Yl0uUOBf2r9-Weow&libraries=places,drawing&callback=initMap"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <!--Bootsrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

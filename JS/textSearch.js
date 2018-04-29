@@ -31,7 +31,11 @@ function setLocation(position) {
         mapTypeId: 'roadmap'
     });
 
-    var markerMy = new google.maps.Marker({position: coordinates, map: map, title: "You are here!"});
+    var markerMy = new google.maps.Marker({
+        position: coordinates,
+        map: map,
+        title: "You are here!",
+    });
 }
 
 
@@ -110,7 +114,7 @@ function createMarker(obj) {
 
     // подготавливаем содержимое для балуна
     var infowindow = new google.maps.InfoWindow({
-        content: '<img src="' + obj.icon + '" /><font style="color:#000;">' + obj.name +
+        content: '<h2>' + obj.name + '</h2>' +
         '<br />Рейтинг: ' + obj.rating + '<br />Адрес: ' + obj.vicinity + '</font>'
     });
 
