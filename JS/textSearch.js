@@ -1,7 +1,11 @@
 var map;
 var markers = Array();
 var infos = Array();
-
+var mark = new google.maps.Marker({
+    position: obj.geometry.location,
+    map: map,
+    title: obj.name
+});
 var userPositionLatitude;
 var userPositionLongitude;
 
@@ -112,11 +116,15 @@ function createMarker(obj) {
     });
     markers.push(mark);
 
+
     // подготавливаем содержимое для балуна
     var infowindow = new google.maps.InfoWindow({
-        content: '<h2>' + obj.name + '</h2>' +
-        '<br />Рейтинг: ' + obj.rating + '<br />Адрес: ' + obj.vicinity + '</font>'
+        content: '<button class="btn btn-warning star-button"><img src="icons/star.png"> Add to favourite</button> ' + '<h1>' + obj.name + '</h1>' +
+        'Рейтинг: ' + obj.rating + '<br />Адрес: ' + obj.vicinity
     });
+
+
+
 
     // добавляем обработчик клика по метке
     google.maps.event.addListener(mark, 'click', function() {
